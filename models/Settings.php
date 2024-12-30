@@ -20,12 +20,12 @@
         public $settingsCode   = 'martin_ssologin_settings';
         public $settingsFields = 'fields.yaml';
 
-        public function __construct() {
+        public function __construct(array $attributes = []) {
             $this->attributeNames = [
                 'google_client_id'     => Lang::get('martin.ssologin::lang.settings.google.client_id'),
                 'google_client_secret' => Lang::get('martin.ssologin::lang.settings.google.client_secret')
             ];
-            parent::__construct();
+            parent::__construct($attributes);
         }
 
     }
